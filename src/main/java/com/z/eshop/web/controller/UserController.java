@@ -42,13 +42,18 @@ public class UserController {
      * @return
      */
     @RequestMapping(value = "/doReg", method = RequestMethod.POST)
-    public String doReg(User user, HttpServletRequest req){
+    public String doReg(User user, HttpServletRequest req, Model m){
         //不要忘了，还有确认密码。。
         //ServletWebRequest r
         //得到确认密码
         String confirmPass = req.getParameter("confirmPass");
-        //判断密码是否一致
-        
+        //1.判断密码是否一致
+        if(!user.getPassword().equals(confirmPass)){
+            m.addAttribute("error", "两次密码输入不一致，确认后请重新输入！！");
+            return "userReg";
+        }
+        //2.判断email是否唯一
+
         //保存用户
         us.saveEntity(user);
         System.out.println(" 注册成功!");

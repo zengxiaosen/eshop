@@ -1,0 +1,3 @@
+这是一个spring+sprngmvc+hibernate的电商项目
+前端view层我目前没去前后端分离，后期会改，先用jsp去搞
+后端hibernate可能有点重，后期会改为mybatis

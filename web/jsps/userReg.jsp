@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: root
@@ -13,7 +14,7 @@
 <body>
   <form action = "/doReg" method="post">
       Username :<input type="text" name="name"><br>
-      Password :<input type="password" name="password"><br>
+      Password :<input type="password" name="password"><c:out value="${requestScope.error}"/><br>
       ConfirmPass :<input type="password" name="confirmPass"><br>
       Email :<input type="text" name="email"><br>
       NickName: <input type="text" name="nickName"><br>
