@@ -1,0 +1,9 @@
+create table eshop.users(
+id int primary key auto_increment,
+name varchar(20),
+password varchar(20),
+regdate datetime);
+
+alter table users add email varchar(20);
+alter table users nickname varchar(20);
+
