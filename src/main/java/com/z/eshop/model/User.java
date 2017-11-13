@@ -1,6 +1,6 @@
 package com.z.eshop.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 /**
  * User类
@@ -9,7 +9,7 @@ public class User {
     private Integer id ;
     private String name ;
     private String password ;
-    private Date regDate ;
+    private Date regDate  = new Date();
     private String email;
     private String nickName;
 

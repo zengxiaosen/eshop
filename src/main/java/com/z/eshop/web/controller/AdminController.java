@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -26,10 +27,18 @@ public class AdminController {
      * 查看用户列表
      * @return
      */
-    @RequestMapping(value = "/admin/userlist", method = RequestMethod.GET)
+    @RequestMapping(value = "/admin/userList", method = RequestMethod.GET)
     public String userList(Model m){
         List<User> allUsers = us.findAllEntities();
         m.addAttribute("allUsers", allUsers);
         return "userList";
+    }
+
+    @RequestMapping(value = "/admin/delUser", method = RequestMethod.GET)
+    public String delUser(@RequestParam("uid") int uid){
+        User u = new User();
+        u.setId(uid);
+        us.deleteEntity(u);
+        return "redirect:/admin/userList";
     }
 }

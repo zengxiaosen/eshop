@@ -2,33 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4544a451-a789-4d2f-ad0c-a162900ecf51" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/z/eshop/util/ValidateUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/z/eshop/web/controller/AdminController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jsps/userList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/WEB-INF/classes/com/z/eshop/model/User.class" afterPath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/WEB-INF/classes/com/z/eshop/model/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/WEB-INF/classes/com/z/eshop/service/BaseService.class" afterPath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/WEB-INF/classes/com/z/eshop/service/BaseService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/WEB-INF/classes/com/z/eshop/service/UserService.class" afterPath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/WEB-INF/classes/com/z/eshop/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/WEB-INF/classes/com/z/eshop/service/impl/BaseServiceImpl.class" afterPath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/WEB-INF/classes/com/z/eshop/service/impl/BaseServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/WEB-INF/classes/com/z/eshop/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/WEB-INF/classes/com/z/eshop/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/WEB-INF/classes/com/z/eshop/web/controller/UserController.class" afterPath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/WEB-INF/classes/com/z/eshop/web/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/z/eshop/model/User.class" afterPath="$PROJECT_DIR$/target/classes/com/z/eshop/model/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/z/eshop/service/BaseService.class" afterPath="$PROJECT_DIR$/target/classes/com/z/eshop/service/BaseService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/z/eshop/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/z/eshop/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/z/eshop/service/impl/BaseServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/z/eshop/service/impl/BaseServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/z/eshop/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/z/eshop/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/z/eshop/web/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/z/eshop/web/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/WEB-INF/classes/User.hbm.xml" afterPath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/WEB-INF/classes/User.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/jsps/index.jsp" afterPath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/jsps/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/jsps/userReg.jsp" afterPath="$PROJECT_DIR$/classes/artifacts/eshop_war_exploded/jsps/userReg.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/z/eshop/service/BaseService.java" afterPath="$PROJECT_DIR$/src/main/java/com/z/eshop/service/BaseService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/z/eshop/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/z/eshop/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/z/eshop/service/impl/BaseServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/z/eshop/service/impl/BaseServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/z/eshop/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/z/eshop/service/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/z/eshop/web/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/z/eshop/web/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/User.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/User.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/jsps/userReg.jsp" afterPath="$PROJECT_DIR$/web/jsps/userReg.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/z/eshop/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/z/eshop/model/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/z/eshop/web/controller/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/z/eshop/web/controller/AdminController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/jsps/userList.jsp" afterPath="$PROJECT_DIR$/web/jsps/userList.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,16 +29,6 @@
                 <element signature="e#2157#2158#0" expanded="true" />
                 <element signature="e#2187#2188#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/z/eshop/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -110,8 +76,8 @@
       <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/z/eshop/web/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            <state relative-caret-position="489">
+              <caret line="41" column="37" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,11 +85,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userList.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/z/eshop/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userList.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/jsps/userList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="489">
+              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -182,7 +161,6 @@
         <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/jsps/index.jsp" />
         <option value="$PROJECT_DIR$/src/test/java/sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/z/eshop/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/User.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/z/eshop/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/z/eshop/util/ValidateUtil.java" />
@@ -191,8 +169,9 @@
         <option value="$PROJECT_DIR$/web/jsps/userReg.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/z/eshop/service/BaseService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/z/eshop/service/impl/BaseServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/z/eshop/web/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/web/jsps/userList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/z/eshop/web/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/z/eshop/model/User.java" />
       </list>
     </option>
   </component>
@@ -1215,7 +1194,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510418254073</updated>
-      <workItem from="1510418259882" duration="27951000" />
+      <workItem from="1510418259882" duration="29016000" />
     </task>
     <servers />
   </component>
@@ -1237,7 +1216,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27951000" />
+    <option name="totallyTimeSpent" value="29016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1431" y="-4" width="1855" height="1084" extended-state="6" />
@@ -1423,23 +1402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/z/eshop/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/User.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -1528,21 +1490,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/userList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/z/eshop/web/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        <state relative-caret-position="489">
+          <caret line="41" column="37" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/userList.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/z/eshop/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="320">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
