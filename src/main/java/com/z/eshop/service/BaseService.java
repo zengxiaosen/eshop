@@ -20,4 +20,7 @@ public interface BaseService<T> {
     public List<T> findByHQL(String hql, Object... objects);
 
     public void execHQL(String hql, Object... objects);
+
+    //查询所有实体
+    public List<T> findAllEntities();
 }

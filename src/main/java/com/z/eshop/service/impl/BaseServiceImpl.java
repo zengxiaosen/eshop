@@ -3,12 +3,20 @@ package com.z.eshop.service.impl;
 import com.z.eshop.dao.BaseDao;
 import com.z.eshop.service.BaseService;
 
+import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
 /**
  * BaseService实现类.
  */
 public abstract class BaseServiceImpl<T> implements BaseService<T> {
+
+    private Class<T> clazz;
+
+    public BaseServiceImpl(){
+        ParameterizedType type = (ParameterizedType)this.getClass().getGenericSuperclass();
+        clazz = (Class)type.getActualTypeArguments()[0];
+    }
 
     private BaseDao<T> dao ;
 
@@ -46,5 +54,11 @@ public abstract class BaseServiceImpl<T> implements BaseService<T> {
 
     public void execHQL(String hql, Object... objects) {
         dao.execHQL(hql,objects);
+    }
+
+    // 查询所有实体
+    public List<T> findAllEntities(){
+        String hql = "from " + clazz.getSimpleName();
+        return this.findByHQL(hql);
     }
 }

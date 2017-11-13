@@ -7,7 +7,7 @@
     <title>index.jsp</title>
   </head>
   <body>
- 
+
 
   <c:if test="${sessionScope.name == null}">
     <c:out value="${requestScope.error}" />

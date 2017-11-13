@@ -3,9 +3,11 @@ package com.z.eshop.service.impl;
 import com.z.eshop.dao.BaseDao;
 import com.z.eshop.model.User;
 import com.z.eshop.service.UserService;
+import com.z.eshop.util.ValidateUtil;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  *UserService具体实现类
@@ -21,4 +23,11 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements UserServic
     public void setDao(BaseDao<User> dao) {
         super.setDao(dao);
     }
+
+    public boolean isRegisted(String email){
+        String hql = "from User u where u.email = ?";
+        List<User> list =  this.findByHQL(hql, email);
+        return ValidateUtil.isValid(list);
+    }
+
 }

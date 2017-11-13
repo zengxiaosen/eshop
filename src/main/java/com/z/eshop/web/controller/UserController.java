@@ -49,11 +49,15 @@ public class UserController {
         String confirmPass = req.getParameter("confirmPass");
         //1.判断密码是否一致
         if(!user.getPassword().equals(confirmPass)){
-            m.addAttribute("error", "两次密码输入不一致，确认后请重新输入！！");
+            m.addAttribute("error.password.nosame", "两次密码输入不一致，确认后请重新输入！！");
             return "userReg";
         }
         //2.判断email是否唯一
-
+        boolean b = us.isRegisted(user.getEmail());
+        if(b){
+            m.addAttribute("error.email.registed", "邮箱已经注册！");
+            return "userReg";
+        }
         //保存用户
         us.saveEntity(user);
         System.out.println(" 注册成功!");
