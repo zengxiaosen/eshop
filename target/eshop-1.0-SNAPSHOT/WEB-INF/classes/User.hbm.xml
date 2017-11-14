@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.z.eshop.model.User" table="users">
+        <id name="id" column="id" type="integer">
+            <generator class="identity" />
+        </id>
+        <property name="name" column="name" type="string" />
+        <property name="password" column="password" type="string" />
+        <property name="regDate" column="regdate" type="date" />
+        <property name="email" column="email" type="string" />
+        <property name="nickName" column="nickname" type="string" />
+    </class>
+</hibernate-mapping>
