@@ -41,4 +41,24 @@ public class AdminController {
         us.deleteEntity(u);
         return "redirect:/admin/userList";
     }
+
+    @RequestMapping(value = "/admin/viewUser", method = RequestMethod.GET)
+    public String viewUser(@RequestParam("uid") int uid, Model m){
+        User u = us.getEntity(uid);
+        m.addAttribute("user", u);
+        return "viewUser";
+    }
+
+    @RequestMapping(value = "/admin/editUser", method = RequestMethod.GET)
+    public String editUser(@RequestParam("uid") int uid, Model m){
+        User u = us.getEntity(uid);
+        m.addAttribute("user", u);
+        return "editUser";
+    }
+
+    @RequestMapping(value = "/admin/updateUser", method = RequestMethod.POST)
+    public String updateUser(User u){
+        us.updateEntity(u);
+        return "redirect:/admin/userList";
+    }
 }

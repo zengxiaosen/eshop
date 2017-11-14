@@ -14,11 +14,11 @@
 </head>
 <body>
   <form action = "/doReg" method="post">
-      Username :<input type="text" name="name"><br>
-      Password :<input type="password" name="password"><c:out value="${requestScope['error.password.nosame']}"/><br>
+      Username :<input type="text" name="name" value="${user.name}"><br>
+      Password :<input type="password" name="password" value="${user.password}"><c:out value="${requestScope['error.password.nosame']}"/><br>
       ConfirmPass :<input type="password" name="confirmPass"><br>
-      Email :<input type="text" name="email"><c:out value="${requestScope['error.email.registed']}"/><br>
-      NickName: <input type="text" name="nickName"><br>
+      Email :<input type="text" name="email" value="${user.email}"><c:out value="${requestScope['error.email.registed']}"/><br>
+      NickName: <input type="text" name="nickName" value="${user.nickName}"><br>
       <input type="submit">
   </form>
 </body>
