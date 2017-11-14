@@ -15,7 +15,7 @@
                 <configuration>
                     <warSourceDirectory>web</warSourceDirectory>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <excludes>css/*,image/*,js/*,png/*,phone/*</excludes>
+                    <!--<excludes>css/*,image/*,js/*,png/*,phone/*</excludes>-->
                 </configuration>
             </plugin>
         </plugins>

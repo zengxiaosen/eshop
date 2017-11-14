@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+body{
+	margin:0 auto;
+}
+div{
+	border:1px solid blue ;
+	font-size: 15px;
+	height: 50px ;
+	width: 400px ;
+	color:red ;
+	margin: 0 auto;
+}
+
+img{
+	border : 2px solid green ;
+}

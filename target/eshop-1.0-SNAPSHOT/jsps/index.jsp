@@ -16,6 +16,6 @@
   <c:if test="${sessionScope.name != null}">
     欢迎 <c:out value="${sessionScope.name}" />
   </c:if>
-    <a href="/toRegPage">用户注册</a>
+  <a href="<c:url value='/toRegPage' />">用户注册</a>
   </body>
 </html>

@@ -13,7 +13,7 @@
     <title>userReg.jsp</title>
 </head>
 <body>
-  <form action = "/admin/updateUser" method="post">
+  <form action = "<c:url value='/admin/updateUser'/>" method="post">
       <input type="hidden" name="id" value="<c:out value="${user.id}"/>">
       Username :<input type="text" name="name" value="${user.name}"><br>
       Password :<input type="password" name="password" value="${user.password}"><c:out value="${requestScope['error.password.nosame']}"/><br>

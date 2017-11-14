@@ -11,7 +11,7 @@
     <title>login.jsp</title>
 </head>
 <body>
-    <form action="/doLogin" method="post">
+    <form action="<c:url value='/doLogin' />" method="post">
         Username: <input type="text" name="name"><br>
         Password: <input type="password" name="password"><br>
         <input type="submit">

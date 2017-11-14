@@ -1,3 +1,0 @@
-function show(){
-	alert("welcome !");
-}
