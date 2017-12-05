@@ -10,7 +10,15 @@ public class HDFSWriter {
      * hdfs://mycluster/eshop/2017/02/28/s201.log | s202.log | s203.log
      */
     public void writeLog2HDFS(String path, byte[] log){
-        //得到我们的装饰流
-        FSDataOutputStream out = HDFSOutputStreamPool.getInstance();
+        try{
+            //得到我们的装饰流
+            FSDataOutputStream out = HDFSOutputStreamPool.getInstance().takeOutputStream(path);
+            out.write(log);
+            out.write("\r\n".getBytes());
+            out.hsync();
+            out.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }
