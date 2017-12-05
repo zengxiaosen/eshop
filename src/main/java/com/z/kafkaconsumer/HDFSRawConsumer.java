@@ -19,7 +19,7 @@ public class HDFSRawConsumer {
     private static HDFSWriter writer = new HDFSWriter();
     public HDFSRawConsumer(){
         Properties props = new Properties();
-        props.put("zookeeper.connect", "s202:2181 s203:2181 s204:2181");
+        props.put("zookeeper.connect", "s202:2181,s203:2181,s204:2181");
         props.put("group.id", "ggg1");
         //from begining consume , cong ling kai shi xiao fei
         props.put("auto.offset.reset", "smallest");
