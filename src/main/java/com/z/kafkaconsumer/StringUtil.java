@@ -40,4 +40,29 @@ public class StringUtil {
         }
         return null;
     }
+
+    /**
+     * 将数组转换成字符串，使用token作为分隔符
+     */
+    public static String arr2Str(Object[] arr, String token){
+        String str = "";
+        for(Object o : arr){
+            str = str + o + token;
+        }
+        return str.substring(0, str.length()-1);
+    }
+
+    /**
+     * 将字符串转成日期对象
+     */
+    public static Date str2Date(String[] arr){
+        try {
+            SimpleDateFormat sdf = new SimpleDateFormat("dd/MMM/yyyy:HH:mm:ss", Locale.US);
+            Date d = sdf.parse(arr[3].split(" ")[0]);
+            return d ;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
