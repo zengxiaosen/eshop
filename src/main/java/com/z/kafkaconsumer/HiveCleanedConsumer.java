@@ -102,7 +102,7 @@ public class HiveCleanedConsumer {
                             out.release();
                             out = null;
                         }
-                        out = (MyFSDataOutputStream)HDFSOutputStreamPool.getInstance().takeOutputStream();
+                        out = (MyFSDataOutputStream)HDFSOutputStreamPool.getInstance().takeOutputStream(rawPath);
                         prePath = rawPath;
                     }
                     //

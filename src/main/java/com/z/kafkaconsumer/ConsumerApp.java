@@ -21,7 +21,7 @@ public class ConsumerApp {
         new Thread(){
             public void run(){
                 HiveCleanedConsumer consumer = new HiveCleanedConsumer();
-                consumer.processLog;
+                consumer.processLog();
             }
         }.start();
     }
