@@ -92,7 +92,26 @@ public class HiveCleanedConsumer {
                 int mi = c.get(Calendar.MINUTE);
 
                 //path
+                String rawPath = "/user/centos/eshop/cleaned/"+
+                        y+"/"+m+"/"+d+"/"+h+"/"+mi+"/"+hostname+".log";
 
+                try{
+                    //判断是否和上一次相同
+                    if(!rawPath.equals(prePath)){
+                        if(out != null){
+                            out.release();
+                            out = null;
+                        }
+                        out = (MyFSDataOutputStream)HDFSOutputStreamPool.getInstance().takeOutputStream();
+                        prePath = rawPath;
+                    }
+                    //
+                    out.write(newMsg.getBytes());
+                    out.write("\r\n".getBytes());
+                    out.hsync();
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
             }
 
         }
