@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<property>
+		<name>dfs.replication</name>
+		<value>3</value>
+	</property>
+	<property>
+		<name>dfs.blocksize</name>
+		<value>128m</value>
+	</property>
+	<property>
+		<name>dfs.namenode.name.dir</name>
+		<value>file:///home/centos/hadoop/dfs/name1,file:///home/centos/hadoop/dfs/name2</value>
+	</property>
+	<property>
+		<name>dfs.datanode.data.dir</name>
+		<value>file:///home/centos/hadoop/dfs/data1,file:///home/centos/hadoop/dfs/data2</value>
+	</property>
+	<!-- 名字服务 -->
+	<property>
+		<name>dfs.nameservices</name>
+		<value>mycluster</value>
+	</property>
+
+	<!-- 指定含有哪两个节点 -->
+	<property>
+		<name>dfs.ha.namenodes.mycluster</name>
+		<value>nn1,nn2</value>
+	</property>
+
+	<!-- 配置nn1的rpc地址 -->
+	<property>
+		<name>dfs.namenode.rpc-address.mycluster.nn1</name>
+		<value>s201:8020</value>
+	</property>
+
+	<!-- 配置nn1的rpc地址 -->
+	<property>
+		<name>dfs.namenode.rpc-address.mycluster.nn2</name>
+		<value>s206:8020</value>
+	</property>
+
+	<!-- nn1 webui -->
+	<property>
+		<name>dfs.namenode.http-address.mycluster.nn1</name>
+		<value>s201:50070</value>
+	</property>
+	<!-- nn2 webui -->
+	<property>
+		<name>dfs.namenode.http-address.mycluster.nn2</name>
+		<value>s206:50070</value>
+	</property>
+
+	<!-- 配置共享编辑日志目录(journalnode) -->
+	<property>
+		<name>dfs.namenode.shared.edits.dir</name>
+		<value>qjournal://s202:8485;s203:8485;s204:8485/mycluster</value>
+	</property>
+
+	<!-- 配置jn存放edit log的本地目录 -->
+	<property>
+		<name>dfs.journalnode.edits.dir</name>
+		<value>/home/centos/journal/local/data</value>
+	</property>
+
+	<!-- 容灾代理提供商 -->
+	<property>
+		<name>dfs.client.failover.proxy.provider.mycluster</name>
+		<value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+	</property>
+
+	<!--  -->
+	<property>
+		<name>dfs.ha.fencing.methods</name>
+		<value>sshfence
+			shell(/bin/true)</value>
+	</property>
+
+	<!--  -->
+	<property>
+		<name>dfs.ha.fencing.ssh.private-key-files</name>
+		<value>/home/centos/.ssh/id_rsa</value>
+	</property>
+	<property>
+		<name>dfs.ha.automatic-failover.enabled</name>
+		<value>true</value>
+	</property>
+</configuration>
