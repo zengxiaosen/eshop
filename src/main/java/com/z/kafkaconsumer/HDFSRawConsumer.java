@@ -52,7 +52,36 @@ public class HDFSRawConsumer {
             while(consumerIte.hasNext()){
                 byte[] msg = consumerIte.next().message();
                 String log = new String(msg);
-                String[] arr =
+                String[] arr = StringUtil.splitLog(log);
+                if(arr == null || arr.length < 10){
+                    continue;
+                }
+                //
+                System.out.println("raw:" + log);
+                //主机名
+                String hostname = StringUtil.getHostname(arr);
+                //日期串
+                String dateStr = StringUtil.formatYyyyMmDdHhMi(arr);
+                //path
+                String rawPath = "/user/centos/eshop/raw/" + dateStr + "/" + hostname + ".log";
+                try{
+                    //判断是否和上一次相同
+                    if(!rawPath.equals(prePath)){
+                        if(out != null){
+                            out.release();
+                            out = null;
+                        }
+                        out = (MyFSDataOutputStream)HDFSOutputStreamPool.getInstance().takeOutputStream(rawPath);
+                        prePath = rawPath;
+                    }
+
+                    //
+                    out.write(msg);
+                    out.write("\r\n".getBytes());
+                    out.hsync();
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         }
     }
