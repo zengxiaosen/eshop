@@ -48,6 +48,52 @@ public class HiveCleanedConsumer {
 
         for(final KafkaStream stream : streams){
             //
+            ConsumerIterator<byte[], byte[]> consumerIte = stream.iterator();
+            //迭代日志消息
+            MyFSDataOutputStream out = null;
+            String prePath = "";
+            while(consumerIte.hasNext()){
+                byte[] msg = consumerIte.next().message();
+                String newMsg = null;
+                String log = new String(msg);
+                String arr[] = StringUtil.splitLog(log);
+                //
+                if(arr == null || arr.length < 10){
+                    continue ;
+                }
+
+                System.out.println("hive : " + log);
+                //进行清洗
+                String request = arr[4];
+                String[] reqArr = request.split(" ");
+                if(reqArr != null && reqArr.length == 3){
+                    if(reqArr[1].endsWith(".html")){
+                        newMsg = StringUtil.arr2Str(arr, ",");
+                    }else{
+                        continue;
+                    }
+                }
+                else{
+                    continue;
+                }
+                //主机名
+                String hostname = StringUtil.getHostname(arr);
+                //
+                //取出日期对象
+                Date reqDate = StringUtil.str2Date(arr);
+                //得到日历对象
+                Calendar c = Calendar.getInstance();
+                //设置Date时间
+                c.setTime(reqDate);
+                int y = c.get(Calendar.YEAR);
+                int m = c.get(Calendar.MONTH) + 1;
+                int d = c.get(Calendar.DAY_OF_MONTH);
+                int h = c.get(Calendar.HOUR_OF_DAY);
+                int mi = c.get(Calendar.MINUTE);
+
+                //path
+
+            }
 
         }
     }
